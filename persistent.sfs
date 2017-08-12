@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 8
+	launchID = 9
 	modded = True
 	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP.x86_64  - 
 	versionFull = 1.3.0.1804 (LinuxPlayer)
@@ -246,7 +246,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = -1000
+		update = 623203.37185178779
 		version = 1.3.0
 		WEIGHTS
 		{
@@ -322,28 +322,28 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 29c79ab3-c134-41c7-84e1-2429ff6c476d
+				guid = e75f3ed8-02fa-4539-9c61-b17f88570c01
 				type = TourismContract
 				prestige = 0
-				seed = -97154572
+				seed = -465380965
 				state = Active
 				viewed = Read
-				agent = Reaction Systems Ltd
+				agent = Dinkelstein Kerman's Construction Emporium
 				deadlineType = Floating
 				expiryType = Floating
-				values = 108000,46008000,0,0,0,0,19.04762,10,729236.57356991,621256.173569928,46629256.1735699,0
+				values = 21600,46008000,0,0,0,0,18.04179,9.756098,640729.300239705,619199.20023977,46627199.2002398,0
 				preposition = right here on Kerbin
 				homeDestinations = True
 				isGeeAdventure = False
-				tourists = Jeske Kerman|Jengas Kerman
+				tourists = Harford Kerman|Charlie Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					state = Incomplete
 					disableOnStateChange = False
 					allowPartialFailure = True
-					values = 19500,0,0,0,0
-					kerbalName = Jeske Kerman
+					values = 9750,0,0,0,0
+					kerbalName = Harford Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -351,16 +351,7 @@ GAME
 						values = 3250,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Jeske Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Jeske Kerman
+						kerbalName = Harford Kerman
 					}
 				}
 				PARAM
@@ -370,7 +361,7 @@ GAME
 					disableOnStateChange = False
 					allowPartialFailure = True
 					values = 19500,0,0,0,0
-					kerbalName = Jengas Kerman
+					kerbalName = Charlie Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -378,7 +369,7 @@ GAME
 						values = 3250,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Jengas Kerman
+						kerbalName = Charlie Kerman
 					}
 					PARAM
 					{
@@ -387,7 +378,7 @@ GAME
 						values = 3250,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Jengas Kerman
+						kerbalName = Charlie Kerman
 					}
 				}
 			}
@@ -464,74 +455,12 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = e75f3ed8-02fa-4539-9c61-b17f88570c01
-				type = TourismContract
-				prestige = 0
-				seed = -465380965
-				state = Active
-				viewed = Read
-				agent = Dinkelstein Kerman's Construction Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,18.04179,9.756098,640729.300239705,619199.20023977,46627199.2002398,0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				isGeeAdventure = False
-				tourists = Harford Kerman|Charlie Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 9750,0,0,0,0
-					kerbalName = Harford Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Harford Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 19500,0,0,0,0
-					kerbalName = Charlie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Charlie Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Charlie Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
 				guid = fb228735-969d-4e11-9376-5edb614c6ddb
 				type = PartTest
 				prestige = 0
 				seed = -465380938
 				state = Offered
-				viewed = Seen
+				viewed = Read
 				agent = Kerbodyne
 				deadlineType = Floating
 				expiryType = Floating
@@ -843,16 +772,17 @@ GAME
 				PARAM
 				{
 					name = KerbalTourParameter
-					state = Incomplete
+					state = Complete
 					disableOnStateChange = False
 					allowPartialFailure = True
-					values = 24375,0,0,0,0
+					values = 0,0,0,0,0
 					kerbalName = Sigbrett Kerman
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
 						kerbalName = Sigbrett Kerman
@@ -860,8 +790,9 @@ GAME
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Sigbrett Kerman
@@ -1402,6 +1333,81 @@ GAME
 					holdSeconds = 10
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = 29c79ab3-c134-41c7-84e1-2429ff6c476d
+				type = TourismContract
+				prestige = 0
+				seed = -97154572
+				state = Completed
+				viewed = Read
+				agent = Reaction Systems Ltd
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,0,0,0,0,19.04762,10,729236.57356991,621256.173569928,46629256.1735699,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Jeske Kerman|Jengas Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Jeske Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Jeske Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Jeske Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Jengas Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Jengas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Jengas Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -1414,7 +1420,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 412554.52390695899
+		funds = 415652.68276642053
 	}
 	SCENARIO
 	{
@@ -1541,7 +1547,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 80.8209534
+		sci = 82.4876175
 		Tech
 		{
 			id = start
@@ -2299,9 +2305,9 @@ GAME
 			id = recovery@KerbinOrbited
 			title = Recovery of a vessel returned from orbit around Kerbin
 			dsc = 1
-			scv = 0.166666672
+			scv = 0.0277777519
 			sbv = 10
-			sci = 10
+			sci = 11.666667
 			cap = 12
 		}
 		Science
@@ -3344,7 +3350,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 105.898041
+		rep = 124.94046
 	}
 	SCENARIO
 	{
@@ -3472,7 +3478,7 @@ GAME
 		}
 		SpaceCenter/AstronautComplex
 		{
-			lvl = 0
+			lvl = 0.5
 		}
 		SpaceCenter/MissionControl
 		{
@@ -4495,13 +4501,21 @@ GAME
 		{
 			IsNewSave = False
 		}
-		LifeSupportBuildAid
+		LifeSupportMonitoring
 		{
 			visible = False
 			x = 810
-			y = 450
+			y = 75
 			width = 300
-			height = 180
+			height = 300
+		}
+		LifeSupportCrewRoster
+		{
+			visible = False
+			x = 800
+			y = 440
+			width = 320
+			height = 200
 		}
 	}
 	SCENARIO
@@ -4512,9 +4526,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 621278.79356994934
+		UT = 623207.891851792
 		activeVessel = 0
-		mapViewFiltering = 8191
+		mapViewFiltering = -1
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
 		VESSEL
@@ -6835,90 +6849,6 @@ GAME
 			trait = Tourist
 			brave = 0.931220949
 			dumb = 0.1668185
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Sigbrett Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.799593508
-			dumb = 0.7340042
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Jeske Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.289149106
-			dumb = 0.496887177
-			badS = False
-			veteran = False
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Jengas Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.323888779
-			dumb = 0.439583063
 			badS = False
 			veteran = False
 			tour = False
