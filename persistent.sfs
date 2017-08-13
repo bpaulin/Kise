@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 9
+	launchID = 14
 	modded = True
 	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP.x86_64  - 
 	versionFull = 1.3.0.1804 (LinuxPlayer)
@@ -246,12 +246,12 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 623203.37185178779
+		update = 629127.18052918534
 		version = 1.3.0
 		WEIGHTS
 		{
 			ConfiguredContract = 30
-			TourismContract = 88
+			TourismContract = 90
 			SurveyContract = 23
 			StationContract = 30
 			SentinelContract = 30
@@ -262,9 +262,9 @@ GAME
 			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
-			PartTest = 60
+			PartTest = 84
 			GrandTour = 30
-			CollectScience = 30
+			CollectScience = 42
 			Eeloo = 30
 			Dres = 30
 			Pol = 30
@@ -287,170 +287,88 @@ GAME
 		{
 			CONTRACT
 			{
-				guid = 93f721ca-819f-42a1-84a6-4496996fdce2
-				type = TourismContract
+				guid = 29dac0b7-9b89-48b7-930d-ab01ca680f26
+				type = SurveyContract
 				prestige = 0
-				seed = -465380954
-				state = Active
-				viewed = Read
-				agent = Integrated Integrals
+				seed = 763803377
+				state = Offered
+				viewed = Seen
+				agent = FLOOYD Dynamics Research Labs
 				deadlineType = Floating
 				expiryType = Floating
-				values = 128316.832065582,45552475.3832817,0,0,0,0,19.42857,10,747446.132305287,619199.20023977,46171674.5835215,0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				isGeeAdventure = False
-				tourists = Tamney Kerman
+				values = 108000,46008000,30000,55649.9974727631,31499.9985694885,0,8.571429,9,732943.13948362,0,0,0
+				targetBody = 1
+				centerLatitude = 17.95887450292631
+				centerLongitude = -74.433538082257627
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin^N
+				focusedSurvey = False
+				targetBand = LOW
+				contextual = False
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = SurveyWaypointParameter
 					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 9750,0,0,0,0
-					kerbalName = Tamney Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Tamney Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = e75f3ed8-02fa-4539-9c61-b17f88570c01
-				type = TourismContract
-				prestige = 0
-				seed = -465380965
-				state = Active
-				viewed = Read
-				agent = Dinkelstein Kerman's Construction Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,46008000,0,0,0,0,18.04179,9.756098,640729.300239705,619199.20023977,46627199.2002398,0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				isGeeAdventure = False
-				tourists = Harford Kerman|Charlie Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 9750,0,0,0,0
-					kerbalName = Harford Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Harford Kerman
-					}
+					values = 8800,0,3,3,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 18500
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1827109053
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 17.964083733625998
+					wpLongitude = -72.49017301758677
+					wpLandlocked = False
+					wpNavigationId = 9ad96ad0-3fda-4509-840b-ddaf4de5c142
 				}
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = SurveyWaypointParameter
 					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 19500,0,0,0,0
-					kerbalName = Charlie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Charlie Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Charlie Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = ae88d9ec-8e0b-468a-b8be-7128a4def021
-				type = TourismContract
-				prestige = 0
-				seed = -465380946
-				state = Active
-				viewed = Read
-				agent = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 104854.373931885,44667963.2949829,0,0,0,0,19.04762,10,723983.67417159,619199.20023977,45287162.4952227,0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				isGeeAdventure = False
-				tourists = Eilnie Kerman|Linlo Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 19500,0,0,0,0
-					kerbalName = Eilnie Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Eilnie Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Eilnie Kerman
-					}
+					values = 8800,0,3,3,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 18800
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1827109053
+					wpIndex = 1
+					wpTexture = thermometer
+					wpLatitude = 20.095684586582969
+					wpLongitude = -73.029709172862567
+					wpLandlocked = False
+					wpNavigationId = f47f100c-89b6-42d2-b9b7-614ec34114fe
 				}
 				PARAM
 				{
-					name = KerbalTourParameter
+					name = SurveyWaypointParameter
 					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 19500,0,0,0,0
-					kerbalName = Linlo Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Linlo Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 3250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Linlo Kerman
-					}
+					values = 8800,0,3,3,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17800
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1827109053
+					wpIndex = 2
+					wpTexture = thermometer
+					wpLatitude = 18.491302610716318
+					wpLongitude = -74.520108850123776
+					wpLandlocked = False
+					wpNavigationId = 2d933d3c-2003-4485-868b-70d5224d6e61
 				}
 			}
 			CONTRACT
@@ -626,7 +544,7 @@ GAME
 				prestige = 1
 				seed = -465380925
 				state = Offered
-				viewed = Seen
+				viewed = Read
 				agent = Reaction Systems Ltd
 				deadlineType = Floating
 				expiryType = Floating
@@ -728,79 +646,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = bed7c4ee-3368-4e52-bc57-c4f76f755e65
-				type = TourismContract
-				prestige = 1
-				seed = -465380917
-				state = Active
-				viewed = Read
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 38571.4282035828,41078571.0368156,0,0,0,0,28.39161,11.53846,657700.728443288,619199.20023977,41697770.2370554,0
-				preposition = right here on Kerbin
-				homeDestinations = True
-				isGeeAdventure = False
-				tourists = Phodos Kerman|Sigbrett Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 24375,0,0,0,0
-					kerbalName = Phodos Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Phodos Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 4062,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Phodos Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Complete
-					disableOnStateChange = False
-					allowPartialFailure = True
-					values = 0,0,0,0,0
-					kerbalName = Sigbrett Kerman
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Sigbrett Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Sigbrett Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
 				guid = 683c9d36-9c55-41f6-a0fc-5e4b8be47912
 				type = SatelliteContract
 				prestige = 1
@@ -859,6 +704,63 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 3a1abdfb-7db0-4371-9e64-7d256dc40bd3
+				type = PartTest
+				prestige = 1
+				seed = 763803379
+				state = Offered
+				viewed = Seen
+				agent = FLOOYD Dynamics Research Labs
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,18000,49500.0010728836,19800.0004291534,6,10.90909,9,668143.13948362,0,0,0
+				part = fairingSize2
+				haul = False
+				dest = 1
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = fairingSize2
+					body = Kerbin
+					situation = SUB_ORBITAL
+					uniqueID = 0.66191279127351599
+					haul = False
+					repeatability = BODYANDSITUATION
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 100000
+						maxAlt = 110000
+					}
 				}
 			}
 			CONTRACT
@@ -947,6 +849,235 @@ GAME
 					values = 96000,0,6,10,0
 					targetBody = 2
 					targetType = FLYBYRETURN
+				}
+			}
+			CONTRACT
+			{
+				guid = 756b9970-b4f8-4c6b-a298-475470107046
+				type = TourismContract
+				prestige = 1
+				seed = 795826757
+				state = Offered
+				viewed = Unseen
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 38571.4282035828,41078571.0368156,0,0,0,0,28.39161,11.53846,667669.488732741,0,0,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Corzon Kerman|Corburry Kerman|Pavan Kerman|Roble Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 24375,0,0,0,0
+					kerbalName = Corzon Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Corzon Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Corzon Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 24375,0,0,0,0
+					kerbalName = Corburry Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Corburry Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Corburry Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 24375,0,0,0,0
+					kerbalName = Pavan Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Pavan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Pavan Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 24375,0,0,0,0
+					kerbalName = Roble Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Roble Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 4062,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Roble Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = cde21102-1039-4c0e-89e3-a357d649d1c8
+				type = TourismContract
+				prestige = 0
+				seed = 796288487
+				state = Offered
+				viewed = Unseen
+				agent = Zaltonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,0,0,0,0,17.96098,9.52381,715498.060529158,0,0,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Dillin Kerman|Melke Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 19500,0,0,0,0
+					kerbalName = Dillin Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Dillin Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Dillin Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 9750,0,0,0,0
+					kerbalName = Melke Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Melke Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = ddecaee5-8368-4aa3-a24c-e4fb650bd25c
+				type = PartTest
+				prestige = 0
+				seed = 796288489
+				state = Offered
+				viewed = Unseen
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,1800,4724.99978542328,1889.99991416931,1,0.952381,1,650698.060529158,0,0,0
+				part = HeatShield0
+				haul = False
+				dest = 1
+				sit = LANDED
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = HeatShield0
+					body = Kerbin
+					situation = LANDED
+					uniqueID = 0.0054704425881944799
+					haul = False
+					repeatability = ALWAYS
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = LANDED
+						title = 
+					}
 				}
 			}
 			CONTRACT_FINISHED
@@ -1408,6 +1539,482 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = bed7c4ee-3368-4e52-bc57-c4f76f755e65
+				type = TourismContract
+				prestige = 1
+				seed = -465380917
+				state = Completed
+				viewed = Read
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 38571.4282035828,41078571.0368156,0,0,0,0,28.39161,11.53846,657700.728443288,619199.20023977,41697770.2370554,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Phodos Kerman|Sigbrett Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Phodos Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Phodos Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Phodos Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Sigbrett Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Sigbrett Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Sigbrett Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = ae88d9ec-8e0b-468a-b8be-7128a4def021
+				type = TourismContract
+				prestige = 0
+				seed = -465380946
+				state = Completed
+				viewed = Read
+				agent = Sean's Cannery
+				deadlineType = Floating
+				expiryType = Floating
+				values = 104854.373931885,44667963.2949829,0,0,0,0,19.04762,10,723983.67417159,619199.20023977,45287162.4952227,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Eilnie Kerman|Linlo Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Eilnie Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Eilnie Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Eilnie Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Linlo Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Linlo Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Linlo Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = e75f3ed8-02fa-4539-9c61-b17f88570c01
+				type = TourismContract
+				prestige = 0
+				seed = -465380965
+				state = Completed
+				viewed = Read
+				agent = Dinkelstein Kerman's Construction Emporium
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,46008000,0,0,0,0,18.04179,9.756098,640729.300239705,619199.20023977,46627199.2002398,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Harford Kerman|Charlie Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Harford Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Harford Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Charlie Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Charlie Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Charlie Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 93f721ca-819f-42a1-84a6-4496996fdce2
+				type = TourismContract
+				prestige = 0
+				seed = -465380954
+				state = Completed
+				viewed = Read
+				agent = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 128316.832065582,45552475.3832817,0,0,0,0,19.42857,10,747446.132305287,619199.20023977,46171674.5835215,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Tamney Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Tamney Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Tamney Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 6eb9de16-255f-463c-99d9-f6081c830e8d
+				type = CollectScience
+				prestige = 0
+				seed = 762636295
+				state = Completed
+				viewed = Read
+				agent = Zaltonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 86400,46008000,7726.49992704391,19831.3489121437,8112.82455496788,3,4.490246,2.857143,711343.13948362,626893.804151986,46634893.804152,0
+				body = 1
+				location = Space
+				PARAM
+				{
+					name = CollectScience
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					body = 1
+					location = Space
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = eaa8cadd-8add-4b7c-bb15-b14bbf9cbe14
+				type = PartTest
+				prestige = 0
+				seed = 1960177804
+				state = Completed
+				viewed = Read
+				agent = Sean's Cannery
+				deadlineType = Floating
+				expiryType = Floating
+				values = 20970.874786377,8933592.65899658,3347.49990701675,8868.29935092927,3412.49984502792,1,0.952381,1,647850.59893835,626893.804151986,9560486.46314857,0
+				part = mk2LanderCabin
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					part = mk2LanderCabin
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.47086860121733909
+					haul = False
+					repeatability = ONCEPERPART
+					tested = 1020891143
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = adf538b8-f2d9-4170-b81a-44b195196f69
+				type = PartTest
+				prestige = 0
+				seed = 352867338
+				state = Completed
+				viewed = Read
+				agent = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 38631.7921490736,8228571.72775267,1871.8268485569,4913.54525432272,1946.69985752106,1,1.024133,1,665570.776301101,626986.084152072,8855557.81190474,0
+				part = smallRadialEngine
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					part = smallRadialEngine
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.66620091147078242
+					haul = False
+					repeatability = ALWAYS
+					tested = 2755931037
+					PARAM
+					{
+						name = ReachDestination
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = aa6942a1-1667-4f29-ba3a-74a8351130de
+				type = TourismContract
+				prestige = 0
+				seed = 721067789
+				state = Completed
+				viewed = Read
+				agent = Probodobodyne Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,0,0,0,0,21.6,10.8,691711.464152002,626965.444152053,46634965.4441521,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Asnard Kerman|Marry Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Asnard Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Asnard Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Marry Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Marry Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = aa65a88c-a067-4ffd-ad84-50301ac93fef
+				type = TourismContract
+				prestige = 0
+				seed = 1849880735
+				state = Completed
+				viewed = Read
+				agent = Rokea Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 78374.4520891905,41734395.7374939,0,0,0,0,19.60241,10,705387.096241287,627032.764152115,42361428.501646,0
+				preposition = right here on Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Wendrin Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Wendrin Kerman
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Wendrin Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Wendrin Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -1420,7 +2027,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 415652.68276642053
+		funds = 555489.01663061487
 	}
 	SCENARIO
 	{
@@ -1547,7 +2154,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 82.4876175
+		sci = 87.8194046
 		Tech
 		{
 			id = start
@@ -2305,9 +2912,9 @@ GAME
 			id = recovery@KerbinOrbited
 			title = Recovery of a vessel returned from orbit around Kerbin
 			dsc = 1
-			scv = 0.0277777519
+			scv = 0.000128587082
 			sbv = 10
-			sci = 11.666667
+			sci = 11.998457
 			cap = 12
 		}
 		Science
@@ -2323,7 +2930,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedAstronautComplex
-			title = EVA Report from Astronaut Complex
+			title = EVA Report from AstronautComplex
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2343,7 +2950,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedMissionControl
-			title = EVA Report from Mission Control
+			title = EVA Report from MissionControl
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2353,7 +2960,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedR&DCornerLab
-			title = EVA Report from R&D Corner Lab
+			title = EVA Report from R&DCornerLab
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2393,7 +3000,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedSPHMainBuilding
-			title = EVA Report from SPH Main Building
+			title = EVA Report from SPHMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2403,7 +3010,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedTrackingStationHub
-			title = EVA Report from Tracking Station Hub
+			title = EVA Report from TrackingStationHub
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2413,7 +3020,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedTrackingStation
-			title = EVA Report from Tracking Station
+			title = EVA Report from TrackingStation
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2433,7 +3040,7 @@ GAME
 		Science
 		{
 			id = evaReport@KerbinSrfLandedVABMainBuilding
-			title = EVA Report from VAB Main Building
+			title = EVA Report from VABMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2473,7 +3080,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedAstronautComplex
-			title = Crew Report from Astronaut Complex
+			title = Crew Report from AstronautComplex
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2493,7 +3100,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedMissionControl
-			title = Crew Report from Mission Control
+			title = Crew Report from MissionControl
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2503,7 +3110,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedR&DCornerLab
-			title = Crew Report from R&D Corner Lab
+			title = Crew Report from R&DCornerLab
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2543,7 +3150,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedSPHMainBuilding
-			title = Crew Report from SPH Main Building
+			title = Crew Report from SPHMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2553,7 +3160,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedTrackingStationHub
-			title = Crew Report from Tracking Station Hub
+			title = Crew Report from TrackingStationHub
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2563,7 +3170,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedTrackingStation
-			title = Crew Report from Tracking Station
+			title = Crew Report from TrackingStation
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2583,7 +3190,7 @@ GAME
 		Science
 		{
 			id = crewReport@KerbinSrfLandedVABMainBuilding
-			title = Crew Report from VAB Main Building
+			title = Crew Report from VABMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2623,7 +3230,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedAstronautComplex
-			title = Mystery Goo™ Observation from Astronaut Complex
+			title = Mystery Goo™ Observation from AstronautComplex
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2643,7 +3250,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedMissionControl
-			title = Mystery Goo™ Observation from Mission Control
+			title = Mystery Goo™ Observation from MissionControl
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2653,7 +3260,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedR&DCornerLab
-			title = Mystery Goo™ Observation from R&D Corner Lab
+			title = Mystery Goo™ Observation from R&DCornerLab
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2693,7 +3300,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedSPHMainBuilding
-			title = Mystery Goo™ Observation from SPH Main Building
+			title = Mystery Goo™ Observation from SPHMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2703,7 +3310,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedTrackingStationHub
-			title = Mystery Goo™ Observation from Tracking Station Hub
+			title = Mystery Goo™ Observation from TrackingStationHub
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2713,7 +3320,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedTrackingStation
-			title = Mystery Goo™ Observation from Tracking Station
+			title = Mystery Goo™ Observation from TrackingStation
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2733,7 +3340,7 @@ GAME
 		Science
 		{
 			id = mysteryGoo@KerbinSrfLandedVABMainBuilding
-			title = Mystery Goo™ Observation from VAB Main Building
+			title = Mystery Goo™ Observation from VABMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2773,7 +3380,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedAstronautComplex
-			title = Materials Study from Astronaut Complex
+			title = Materials Study from AstronautComplex
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2793,7 +3400,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedMissionControl
-			title = Materials Study from Mission Control
+			title = Materials Study from MissionControl
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2803,7 +3410,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedR&DCornerLab
-			title = Materials Study from R&D Corner Lab
+			title = Materials Study from R&DCornerLab
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2843,7 +3450,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedSPHMainBuilding
-			title = Materials Study from SPH Main Building
+			title = Materials Study from SPHMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2853,7 +3460,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedTrackingStationHub
-			title = Materials Study from Tracking Station Hub
+			title = Materials Study from TrackingStationHub
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2863,7 +3470,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedTrackingStation
-			title = Materials Study from Tracking Station
+			title = Materials Study from TrackingStation
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2883,7 +3490,7 @@ GAME
 		Science
 		{
 			id = mobileMaterialsLab@KerbinSrfLandedVABMainBuilding
-			title = Materials Study from VAB Main Building
+			title = Materials Study from VABMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2923,7 +3530,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedAstronautComplex
-			title = Atmospheric Pressure Scan from Astronaut Complex
+			title = Atmospheric Pressure Scan from AstronautComplex
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2943,7 +3550,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedMissionControl
-			title = Atmospheric Pressure Scan from Mission Control
+			title = Atmospheric Pressure Scan from MissionControl
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2953,7 +3560,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedR&DCornerLab
-			title = Atmospheric Pressure Scan from R&D Corner Lab
+			title = Atmospheric Pressure Scan from R&DCornerLab
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -2993,7 +3600,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedSPHMainBuilding
-			title = Atmospheric Pressure Scan from SPH Main Building
+			title = Atmospheric Pressure Scan from SPHMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3003,7 +3610,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedTrackingStationHub
-			title = Atmospheric Pressure Scan from Tracking Station Hub
+			title = Atmospheric Pressure Scan from TrackingStationHub
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3013,7 +3620,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedTrackingStation
-			title = Atmospheric Pressure Scan from Tracking Station
+			title = Atmospheric Pressure Scan from TrackingStation
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3033,7 +3640,7 @@ GAME
 		Science
 		{
 			id = barometerScan@KerbinSrfLandedVABMainBuilding
-			title = Atmospheric Pressure Scan from VAB Main Building
+			title = Atmospheric Pressure Scan from VABMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3073,7 +3680,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedAstronautComplex
-			title = Temperature Scan from Astronaut Complex
+			title = Temperature Scan from AstronautComplex
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3093,7 +3700,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedMissionControl
-			title = Temperature Scan from Mission Control
+			title = Temperature Scan from MissionControl
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3103,7 +3710,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedR&DCornerLab
-			title = Temperature Scan from R&D Corner Lab
+			title = Temperature Scan from R&DCornerLab
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3143,7 +3750,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedSPHMainBuilding
-			title = Temperature Scan from SPH Main Building
+			title = Temperature Scan from SPHMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3153,7 +3760,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedTrackingStationHub
-			title = Temperature Scan from Tracking Station Hub
+			title = Temperature Scan from TrackingStationHub
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3163,7 +3770,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedTrackingStation
-			title = Temperature Scan from Tracking Station
+			title = Temperature Scan from TrackingStation
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3183,7 +3790,7 @@ GAME
 		Science
 		{
 			id = temperatureScan@KerbinSrfLandedVABMainBuilding
-			title = Temperature Scan from VAB Main Building
+			title = Temperature Scan from VABMainBuilding
 			dsc = 1
 			scv = 0
 			sbv = 0.300000012
@@ -3350,7 +3957,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 124.94046
+		rep = 256.91214
 	}
 	SCENARIO
 	{
@@ -3438,6 +4045,34 @@ GAME
 		{
 			intact = True
 		}
+		SpaceCenter/Runway/Facility/End09
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/End27
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/Runway/Facility/Section5
+		{
+			intact = True
+		}
 	}
 	SCENARIO
 	{
@@ -3462,7 +4097,7 @@ GAME
 		}
 		SpaceCenter/Runway
 		{
-			lvl = 0
+			lvl = 0.5
 		}
 		SpaceCenter/VehicleAssemblyBuilding
 		{
@@ -4256,6 +4891,20 @@ GAME
 			code = M+
 			data = 
 		}
+		ENTRY
+		{
+			time = 626938.984152028
+			name = Jebediah Kerman
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 626938.984152028
+			name = Bill Kerman
+			code = C+
+			data = 
+		}
 	}
 	SCENARIO
 	{
@@ -4526,7 +5175,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 623207.891851792
+		UT = 629132.18052918999
 		activeVessel = 0
 		mapViewFiltering = -1
 		commNetUIModeTracking = Network
@@ -4541,17 +5190,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 617099.66045285424
+			met = 622781.8910349533
 			lct = 4145.3331170636138
-			lastUT = 621245.0335699179
+			lastUT = 626927.26415201696
 			root = 0
-			lat = -28.203168464280402
-			lon = -121.06263822475924
-			alt = 75259.114417691133
+			lat = 13.939245267890165
+			lon = -36.477139904789922
+			alt = 287943.06039828784
 			hgt = -1
-			nrm = -0.56599617,0.0321834683,-0.823779464
-			rot = 0.52711457,0.227899268,0.818636477,0.00682509085
-			CoM = 0.0114414245,-0.769344628,2.68220901E-07
+			nrm = -0.780287027,-0.252905637,0.572006047
+			rot = 0.529723525,0.227175668,0.817161739,0.0055635171
+			CoM = 0.011440061,-0.769341111,-8.19563866E-07
 			stg = 0
 			prst = False
 			ref = 0
@@ -4561,13 +5210,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 782458.4608983869
-				ECC = 0.13734782395743456
-				INC = 88.305092140554365
-				LPE = 203.55630330868962
-				LAN = 86.412256275262507
-				MNA = 0.061123624789521505
-				EPH = 621245.01356991834
+				SMA = 782458.56433105934
+				ECC = 0.13734774427076821
+				INC = 88.30509238906663
+				LPE = 203.55628307589899
+				LAN = 86.412254656358584
+				MNA = 2.9228614219257656
+				EPH = 626927.2441520174
 				REF = 1
 			}
 			PART
@@ -4594,8 +5243,8 @@ GAME
 				attN = top, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 213.17541584333765
-				tempExt = 213.61721620306338
+				temp = 255.48713792078237
+				tempExt = 255.3807919529776
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -5249,7 +5898,7 @@ GAME
 							markUT = 4145.3331170636138
 							deltaVExpended = NaN
 							dragLosses = 80.182132757576198
-							gravityLosses = 1408.377349789293
+							gravityLosses = 1412.108490021626
 							steeringLosses = NaN
 							markLAN = 119.13084869384765
 							markLatitude = -0.097207845211438437
@@ -5310,7 +5959,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 10
+					amount = 9.6491849208757934
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -5343,8 +5992,8 @@ GAME
 				attN = bottom, 2
 				mass = 0.00999999978
 				shielded = False
-				temp = 213.19794719818486
-				tempExt = 213.36238282275545
+				temp = 255.39670594708014
+				tempExt = 255.07280849832512
 				tempExtUnexp = 312.35383443459671
 				expt = 0.5
 				state = 0
@@ -5382,7 +6031,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 200
+					amount = 192.98369841753498
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -5415,8 +6064,8 @@ GAME
 				attN = bottom, 3
 				mass = 0.00999999978
 				shielded = False
-				temp = 213.28071731157863
-				tempExt = 213.27831485320209
+				temp = 255.48369320877575
+				tempExt = 255.27674194618339
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5454,7 +6103,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 200
+					amount = 192.98369841753498
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -5487,8 +6136,8 @@ GAME
 				attN = bottom, 4
 				mass = 0.0250000004
 				shielded = False
-				temp = 213.35859484573345
-				tempExt = 213.62533004932698
+				temp = 255.51654957076656
+				tempExt = 255.53765307857293
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5570,8 +6219,8 @@ GAME
 				attN = bottom, 5
 				mass = 0.0250000004
 				shielded = False
-				temp = 213.9751555602694
-				tempExt = 214.45250644158688
+				temp = 255.51353631340012
+				tempExt = 255.33427846087375
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5653,8 +6302,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 216.1144361422341
-				tempExt = 215.66912238677543
+				temp = 255.56172970783436
+				tempExt = 255.86191097130106
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -5829,8 +6478,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 213.97401199513891
-				tempExt = 214.19157099320856
+				temp = 255.50133822318588
+				tempExt = 255.23481636962609
 				tempExtUnexp = 312.35383443459671
 				expt = 0.5
 				state = 0
@@ -5925,8 +6574,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 214.0170912503809
-				tempExt = 214.37911763028586
+				temp = 255.50133822318588
+				tempExt = 255.23481636962609
 				tempExtUnexp = 312.35383443459671
 				expt = 0.5
 				state = 0
@@ -6020,8 +6669,8 @@ GAME
 				srfN = srfAttach, 3
 				mass = 0.0299999993
 				shielded = False
-				temp = 213.31857693842724
-				tempExt = 214.02486342088102
+				temp = 255.53673740384306
+				tempExt = 255.87353140876192
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6128,8 +6777,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = False
-				temp = 213.26512630838741
-				tempExt = 213.17619967639575
+				temp = 255.47125784041683
+				tempExt = 255.21564917832291
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6224,8 +6873,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = False
-				temp = 213.28637404316439
-				tempExt = 213.38378786994994
+				temp = 255.4693934367684
+				tempExt = 255.17787939294018
 				tempExtUnexp = 312.35383443459671
 				expt = 0.5
 				state = 0
@@ -6320,8 +6969,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 213.04010297717434
-				tempExt = 213.33480777284126
+				temp = 255.46577596132519
+				tempExt = 255.1697828224473
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6578,7 +7227,7 @@ GAME
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 6
+				flight = 7
 				0 = ExitVessel,Kerbin
 				0 = BoardVessel,Kerbin
 				0 = Flight,Kerbin
@@ -6611,10 +7260,11 @@ GAME
 				5 = ExitVessel,Kerbin
 				5 = BoardVessel,Kerbin
 				5 = Recover
+				6 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 6
+				flight = 7
 			}
 		}
 		KERBAL
@@ -6634,15 +7284,16 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = -1
+			idx = 1
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
+				flight = 1
 			}
 		}
 		KERBAL
@@ -6703,16 +7354,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Harford Kerman
+			name = Corzon Kerman
 			gender = Male
-			type = Tourist
-			trait = Tourist
-			brave = 0.677422881
-			dumb = 0.33619076
+			type = Unowned
+			trait = Pilot
+			brave = 0.492018938
+			dumb = 0.653106749
 			badS = False
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -6731,16 +7382,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Charlie Kerman
+			name = Corburry Kerman
 			gender = Male
-			type = Tourist
-			trait = Tourist
-			brave = 0.532727718
-			dumb = 0.618432462
+			type = Unowned
+			trait = Pilot
+			brave = 0.544538796
+			dumb = 0.349510372
 			badS = False
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -6759,16 +7410,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Tamney Kerman
+			name = Pavan Kerman
 			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.418659508
-			dumb = 0.165927842
+			type = Unowned
+			trait = Engineer
+			brave = 0.663221776
+			dumb = 0.631863713
 			badS = False
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -6787,16 +7438,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Eilnie Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.865667522
-			dumb = 0.000823539216
+			name = Roble Kerman
+			gender = Male
+			type = Unowned
+			trait = Engineer
+			brave = 0.0768027678
+			dumb = 0.503841162
 			badS = False
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -6815,16 +7466,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Linlo Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.552080572
-			dumb = 0.947568893
+			name = Dillin Kerman
+			gender = Male
+			type = Unowned
+			trait = Scientist
+			brave = 0.235653296
+			dumb = 0.514003575
 			badS = False
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -6843,16 +7494,16 @@ GAME
 		}
 		KERBAL
 		{
-			name = Phodos Kerman
-			gender = Female
-			type = Tourist
-			trait = Tourist
-			brave = 0.931220949
-			dumb = 0.1668185
+			name = Melke Kerman
+			gender = Male
+			type = Unowned
+			trait = Scientist
+			brave = 0.50669837
+			dumb = 0.705757201
 			badS = False
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -6873,5 +7524,45 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Ferry a VIP safely to her destinations and back.</b>~n~nThe tour was a success! Wendrin Kerman had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 20   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry a VIP safely to her destinations and back.</b>~n~n'Wendrin's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 19,500   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Ferry two tourists safely to their destination and back.</b>~n~nThe tour was a success! Asnard and Marry had nothing but great things to say about the trip, and brought back plenty of photos.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 22   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Asnard's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Parameter Complete
+			message = <b>Ferry two tourists safely to their destination and back.</b>~n~n'Marry's Travel Itinerary' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
 	}
 }
