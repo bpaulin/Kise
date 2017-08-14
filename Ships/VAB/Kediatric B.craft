@@ -2,7 +2,7 @@ ship = Kediatric B
 version = 1.3.0
 description = 
 type = VAB
-size = 1.35698009,13.2116394,1.43311477
+size = 1.35698009,13.8366394,1.43311477
 PART
 {
 	part = mk1pod_4293027576
@@ -2203,7 +2203,7 @@ PART
 	dstg = 1
 	sidx = -1
 	sqor = -1
-	sepI = -1
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -2748,9 +2748,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = liquidEngine3_4292935948
+	link = fuelTankSmallFlat_4294360362
 	attN = top,stackDecoupler_4292954136
-	attN = bottom,liquidEngine3_4292935948
+	attN = bottom,fuelTankSmallFlat_4294360362
 	EVENTS
 	{
 	}
@@ -2801,11 +2801,86 @@ PART
 }
 PART
 {
+	part = fuelTankSmallFlat_4294360362
+	partName = Part
+	pos = 0,10.2892246,0
+	attPos = 0,0,0
+	attPos0 = 0,-1.22500038,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = liquidEngine3_4292935948
+	attN = top,fuelTank_4292938912
+	attN = bottom,liquidEngine3_4292935948
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 45
+		maxAmount = 45
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 55
+		maxAmount = 55
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
 	part = liquidEngine3_4292935948
 	partName = Part
-	pos = 0,10.3311024,0
+	pos = 0,9.70610237,0
 	attPos = 0,0,0
-	attPos0 = 0,-1.18312263,0
+	attPos0 = 0,-0.583122253,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -2817,14 +2892,14 @@ PART
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 4
+	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	link = stackDecoupler_4292931996
-	attN = top,fuelTank_4292938912
+	attN = top,fuelTankSmallFlat_4294360362
 	attN = bottom,stackDecoupler_4292931996
 	EVENTS
 	{
@@ -3003,7 +3078,7 @@ PART
 {
 	part = stackDecoupler_4292931996
 	partName = Part
-	pos = 0,9.79323673,0
+	pos = 0,9.16823673,0
 	attPos = 0,0,0
 	attPos0 = 0,-0.537865639,0
 	rot = 0,0,0,1
@@ -3120,7 +3195,7 @@ PART
 {
 	part = fuelTankSmall_4292902960
 	partName = Part
-	pos = 0,9.10499191,0
+	pos = 0,8.47999191,0
 	attPos = 0,0,0
 	attPos0 = 0,-0.68824482,0
 	rot = 0,0,0,1
@@ -3195,7 +3270,7 @@ PART
 {
 	part = fuelTank_4292929320
 	partName = Part
-	pos = 0,7.58405161,0
+	pos = 0,6.95905113,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.5209403,0
 	rot = 0,0,0,1
@@ -3270,7 +3345,7 @@ PART
 {
 	part = fuelTank_4292918304
 	partName = Part
-	pos = 0,5.70586205,0
+	pos = 0,5.08086205,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.87819004,0
 	rot = 0,0,0,1
@@ -3345,7 +3420,7 @@ PART
 {
 	part = liquidEngine2_4292913196
 	partName = Part
-	pos = 0,3.89153481,0
+	pos = 0,3.26653481,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.81432724,0
 	rot = 0,0,0,1
@@ -3359,7 +3434,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 0
-	sqor = 6
+	sqor = 2
 	sepI = 1
 	attm = 0
 	modCost = 0
